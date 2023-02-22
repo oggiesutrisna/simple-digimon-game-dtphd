@@ -76,10 +76,10 @@ function checkForMatch() {
         disableCards();
         score += 1;
         matchesFound += 1;
-        document.getElementById('score').textContent = `Score: ${score}`;
+        document.getElementById('score').innerHTML = `<h1> Score: ${score} </h1>`;
         if (matchesFound === cards.length / 2) {
             setTimeout(() => {
-                alert('Congratulations! You won!');
+                alert('wahh kamu menang, selamat yah, jangan lupa support game ini dengan like, thankyou');
                 resetGame();
             }, 1000);
         }
